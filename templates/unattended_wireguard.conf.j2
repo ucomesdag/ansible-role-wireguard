@@ -1,0 +1,13 @@
+IPv4dev={{ wireguard_device }}
+install_user={{ wireguard_install_user }}
+VPN=wireguard
+pivpnNET={{ wireguard_network.split("/")[0] }}
+subnetClass={{ wireguard_network.split("/")[1] }}
+ALLOWED_IPS={{ wireguard_allowed_ips }}
+pivpnMTU=1420
+pivpnPORT={{ wireguard_allowed_ips }}
+pivpnDNS1={{ wireguard_dns1 }}
+pivpnDNS2={{ wireguard_dns2 }}
+pivpnHOST={{ wireguard_host }}
+pivpnPERSISTENTKEEPALIVE=25
+UNATTUPG=1

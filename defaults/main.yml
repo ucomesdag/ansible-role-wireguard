@@ -1,0 +1,10 @@
+---
+# defaults file for wireguard
+wireguard_host: wireguard.local
+wireguard_network: 10.6.0.0/24
+wireguard_allowed_ips: "10.6.0.0/24"
+wireguard_dns1: 8.8.8.8
+wireguard_dns2: 9.9.9.9
+wireguard_port: 51820
+wireguard_device: eth0
+wireguard_install_user: pi
