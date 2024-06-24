@@ -9,13 +9,13 @@
   ansible.builtin.get_url:
     url: https://install.pivpn.io
     dest: ./install.sh
-    mode: 0750
+    mode: "0750"
 
 - name: Create PiVPN unattended options file
   ansible.builtin.template:
     src: unattended_wireguard.conf.j2
     dest: ./unattended_wireguard.conf
-    mode: 0640
+    mode: "0640"
 
 - name: Install PiVPN
   ansible.builtin.command:
